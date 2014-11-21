@@ -1,0 +1,164 @@
+html { 
+	
+}
+
+h1, 
+h2, 
+h3 { 
+	color: #20096B;
+}
+
+.bodyclass {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	color: #5639B5;
+/*	width: 800px;*/
+/*	margin-left: 22px;*/
+	margin: 30px 0 0 0;
+	/*background: -moz-linear-gradient(top, rgba(148,148,148,1) 0%, rgba(166,166,166,1) 0%, rgba(133,133,133,1) 0%, rgba(130,130,130,1) 51%, rgba(194,194,194,1) 100%);
+	background: webkit-gradient(left top, left bottom, color-stop(0%, rgba(148,148,148,1)), color-stop(0%, rgba(166,166,166,1)), color-stop(0%, rgba(133,133,133,1)), color-stop(51%, rgba(130,130,130,1)), color-stop(100%, rgba(194,194,194,1)));
+	background: -o-linear-gradient(top, rgba(148,148,148,1) 0%, rgba(166,166,166,1) 0%, rgba(133,133,133,1) 0%, rgba(130,130,130,1) 51%, rgba(194,194,194,1) 100%);
+	background: -ms-linear-gradient(top, rgba(148,148,148,1) 0%, rgba(166,166,166,1) 0%, rgba(133,133,133,1) 0%, rgba(130,130,130,1) 51%, rgba(194,194,194,1) 100%);
+	background: linear-gradient(to top, rgba(148,148,148,1) 0%, rgba(166,166,166,1) 0%, rgba(133,133,133,1) 0%, rgba(130,130,130,1) 51%, rgba(194,194,194,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#949494', endColorstr='#c2c2c2', GradientType=0 );
+*/}
+	
+nav ul {
+	background: gray;
+	box-shadow: 0 0 3px #444;
+	font-size: 20px;
+	list-style:none;
+	margin: 0;
+	max-height: 25.45px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+nav ul li {
+	display: inline-block;
+	background: url(../images/ruler.svg);
+	background-size: 69px 26px;
+	padding: 0 2px 0 2px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	vertical-align: text-bottom;
+	&:hover{
+	      color: #fff;
+	}
+}
+
+// COLORS
+$orange: #DF4500;
+$gray: #35302D;
+$gray-shine: #3C3735;
+$white-off: #DFDBD9;
+
+// HOVER SLIDE EFFECT
+.list-hover-slide{
+  
+  li{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  a{
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: .35s ease color;
+    
+    &:before{
+      content: '';
+      display: block;
+      z-index: -1;
+      position: absolute;
+      left: -100%; top: 0;
+      width: 100%; height: 100%;
+      border-right: solid 5px $orange;
+      background: $gray-shine;
+      transition: .35s ease left;
+    }
+    
+    &.is-current,
+    &:hover{
+      
+      &:before{
+        left: 0;
+      }
+    }
+  }
+}
+
+audio {
+	background: url(../images/leaf.png);
+	background-size: 100%;
+/*	margin-left: 40%;*/
+	padding-top: 200px;
+}
+
+#content {
+    height: 400px;
+	margin-left: 20px;
+    background-position: 25% 50%;
+}
+
+/* parallax scrolling technique PRIMARY STRUCTURE */
+.container {
+	height: 550px;
+	margin: 0 40px auto;
+}
+
+/* SECTIONS */
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+section.module h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+section.module p:last-child {
+  margin-bottom: 0;
+}
+
+section.module.content {
+  padding: 0;
+}
+
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 900px;
+  font-weight: 700;
+  text-align: text-bottom;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.module.parallax-1 {
+  background-image: url("../images/Austin_Skyline_at_Dusk.jpg");
+}
+
+section.module.parallax-home {
+	margin-top: -14px;
+	background-image: url("../images/Banner.jpg");
+}

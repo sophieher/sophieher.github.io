@@ -2,26 +2,54 @@
 <html>
 <head>
 <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <title>Sophie Her - Dev</title>
 
 </head>
 
 <body class="bodyclass">
-	<ul id="nav">
-		<li><a href="#">Home</a></li>
-		<li><a href="#">Music</a></li>
-		<li><a href="about.html">About</a></li>
-	 </ul>
-	<div id="content"></div><div id="aside"></div>
-		<h1>Welcome!</h1> 
+		<nav>
+			<ul class="list-hover-slide">
+				<li><a href="#">Home</a></li>
+				<li><a href="#music">Music</a></li>
+				<li><a href="about.html">About</a></li>
+		 	</ul>
+	 	</nav>
+		<section class="module parallax parallax-home">
+			<div class="container">
+				<a name="home">
+				<h1>Welcome</h1>
+			</div>
+		</section>
+		<div id="content">
+			<p>
 			This is Sophie's dev page and sandbox for basic html and other coding things.
-			<p>So, today, for the first time in I can't remember how long, I sat down to my desk, and recorded a song.
-				An old song. A song I may have played twice in the last two years until today. And so, I am going to share this
-				song here.</p>
-				<audio controls>
-					<source src="assets/Strikes\ A\ Chord.mp3" type="audio/mpeg">
-					</audio>
+			<br>
+			You will see an example of parallax scrolling below.
+			</p>
+		</div>
+		
+		<div id="aside"></div>
+			<section class="module parallax parallax-1">
+			  <div class="container">
+				  <a name="music"></a>
+			    <h1>Music</h1>
+			  </div>
+			</section>
 
+			<section class="module content">
+			  <div class="container">
+			    <h2>Songs</h2>
+				<p>So, today, for the first time in I can't remember how long, I sat down to my desk, and recorded a song.
+					An old song. A song I may have played twice in the last two years until today. And so, I am going to share this
+					song here.</p>
+			    <h3>Strikes a Chord</h3>
+				<audio controls>
+					<source src="assets/Strikes_A_Chord.mp3" type="audio/mpeg">
+						Your browser cannot play this song. It's unsupported. 
+					</audio>
+			  </div>
+			</section>
 	 <footer>
 		 <hr>
 	  	  <p>Part of the Footer : Contact information: <a href="mailto:someone@example.com">

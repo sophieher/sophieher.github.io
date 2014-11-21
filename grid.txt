@@ -1,0 +1,55 @@
+			<section class="fourxfour">
+				<h2>Grid Styling</h2>
+				<div id="grid">
+				<ul>
+					<a href="#"><li id="one">One</li></a>
+					<a href="#"><li id="two">Two</li></a>
+					<li id="three">Three</li>
+					<li id="four">Four</li>
+				</ul>
+				</div>
+			</section>
+			
+			.fourxfour ul {
+				margin: 0 1% 0 1%;
+				min-width: 500px;
+				width: 90%;
+			}
+
+			.fourxfour ul li {
+				background: black;
+				border-radius: 35px;
+				box-shadow: 1px 2px 0.2px #333;
+				color: black;
+				display: inline-block;
+				height: 100px;
+				line-height: 100px;
+				list-style: none;
+				/*margin: 0 1% 2px;
+				padding: 2px 2px 2px 2px;
+				*/
+				text-align: center;
+				width: 24%;
+			}
+
+			#one {
+				background: gray;
+			}
+
+			.fourxfour a:hover li{
+				background: url(../images/leaf.png);
+			/*	width: 100px;*/
+			}
+
+			#two {
+				background: url(../images/leaf.png);
+				background-size: auto 100px;
+			}
+
+			#three {
+				background: gray;
+			}
+
+			#four {
+				background: gray;
+			}
