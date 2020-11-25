@@ -5,13 +5,14 @@ html {
 h1, 
 h2, 
 h3 { 
+  text-transform: none !important;
 	color: #20096B;
 }
 
 .bodyclass {
 	display: block;
 	font-family: 'Montserrat', sans-serif;
-	color: #5639B5;
+	color: black;
 /*	width: 800px;*/
 /*	margin-left: 22px;*/
 	margin: 30px 0 0 0;
@@ -22,25 +23,37 @@ h3 {
 	background: linear-gradient(to top, rgba(148,148,148,1) 0%, rgba(166,166,166,1) 0%, rgba(133,133,133,1) 0%, rgba(130,130,130,1) 51%, rgba(194,194,194,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#949494', endColorstr='#c2c2c2', GradientType=0 );
 */}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+	background: orange;
+  height: 50px;
+	position: fixed;
+}
 	
-nav ul {
-	background: gray;
+nav {
 	box-shadow: 0 0 3px #444;
 	font-size: 20px;
 	list-style:none;
 	margin: 0;
-	max-height: 25.45px;
+	/*max-height: 35.45px;*/
 	left: 0;
-	position: fixed;
 	top: 0;
 	width: 100%;
 }
 
+ul li {
+  display: inline-block;
+  padding: 0 2px 0 2px;
+}
+
 nav ul li {
-	display: inline-block;
-	background: url(../images/ruler.svg);
+	/*background: url(../images/ruler.svg);*/
 	background-size: 69px 26px;
-	padding: 0 2px 0 2px;
 }
 
 nav ul li a {
@@ -60,12 +73,12 @@ $white-off: #DFDBD9;
 // HOVER SLIDE EFFECT
 .list-hover-slide{
   
-  li{
+  li {
     position: relative;
     overflow: hidden;
   }
   
-  a{
+  a {
     display: block;
     position: relative;
     z-index: 1;
@@ -137,21 +150,21 @@ section.module.content {
 }
 
 section.module.parallax {
-  height: 600px;
-  background-position: 50% 50%;
+  height: 500px;
+  background-position: 0% 0%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100% 60%;
 }
 
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 48px;
-  line-height: 900px;
+  line-height: 320px;
   font-weight: 700;
   text-align: text-bottom;
   text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /*text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
 }
 
 section.module.parallax-1 {
@@ -160,5 +173,13 @@ section.module.parallax-1 {
 
 section.module.parallax-home {
 	margin-top: -14px;
-	background-image: url("../images/Banner.jpg");
+	background-image: url("../images/iaMHer.png");
+  background-color: #F8F8F8;
+}
+
+span.fab {
+  font-family: 'FontAwesome';
+  color: black;
+  padding-right: 22px;
+  font-size: 40px
 }

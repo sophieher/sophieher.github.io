@@ -1,60 +1,84 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
-<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-<title>Sophie Her - Dev</title>
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <!-- Add icon library -->
+    <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/brands.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/solid.css" rel="stylesheet">
+
+    <title>iaMHer Music</title>
 
 </head>
 
 <body class="bodyclass">
-		<nav>
-			<ul class="list-hover-slide">
-				<li><a href="#">Home</a></li>
-				<li><a href="#music">Music</a></li>
-				<li><a href="about.html">About</a></li>
-		 	</ul>
-	 	</nav>
-		<section class="module parallax parallax-home">
-			<div class="container">
-				<a name="home">
-				<h1>Welcome</h1>
-			</div>
-		</section>
-		<div id="content">
-			<p>
-			This is Sophie's dev page and sandbox for basic html and other coding things.
-			<br>
-			You will see an example of parallax scrolling below.
-			</p>
-		</div>
-		
-		<div id="aside"></div>
-			<section class="module parallax parallax-1">
-			  <div class="container">
-				  <a name="music"></a>
-			    <h1>Music</h1>
-			  </div>
-			</section>
+    <nav>
+        <ul class="list-hover-slide">
+            <li><a href="#">Home</a></li>
+            <li><a href="#releases">Releases</a></li>
+            <li><a href="https://iamhermusic.bandcamp.com">Music</a></li>
+            <!-- <li><a href="about.html">About</a></li> -->
+        </ul>
+    </nav>
+    <section class="module parallax parallax-home">
+        <div class="container">
+            <a name="home" />
+            <h1>iaMHer Music</h1>
+        </div>
+    </section>
+    <div id="content">
+        <p>
+        <img src="https://f4.bcbits.com/img/0022343048_20.jpg" width=200 float=left>
+    </p>
+    <p>
+        iaMHer is a relatively irregularly performing singer-songwriter of acoustic, electric, and electronic music based in Austin, TX.
+    </p>
+    </div>
 
-			<section class="module content">
-			  <div class="container">
-			    <h2>Songs</h2>
-				<p>So, today, for the first time in I can't remember how long, I sat down to my desk, and recorded a song.
-					An old song. A song I may have played twice in the last two years until today. And so, I am going to share this
-					song here.</p>
-			    <h3>Strikes a Chord</h3>
-				<audio controls>
-					<source src="assets/Strikes_A_Chord.mp3" type="audio/mpeg">
-						Your browser cannot play this song. It's unsupported. 
-					</audio>
-			  </div>
-			</section>
-	 <footer>
-		 <hr>
-	  	  <p>Part of the Footer : Contact information: <a href="mailto:someone@example.com">
-	  someone@example.com</a>.</p>
-	</footer>
+    <div id="aside"></div>
+    <section class="module parallax parallax-1">
+        <div class="container">
+            <a name="music"></a>
+            <h1>Recent Releases</h1>
+        </div>
+    </section>
+
+    <section class="module content">
+        <a name="releases"></a>
+<!--
+        <div class="container">
+            <h2>Songs</h2>
+            <p>So, today, for the first time in I can't remember how long, I sat down to my desk, and recorded a song.
+                An old song. A song I may have played twice in the last two years until today. And so, I am going to share this
+                song here.</p>
+            <h3>Strikes a Chord</h3>
+            <audio controls>
+                <source src="assets/Strikes_A_Chord.mp3" type="audio/mpeg">
+                Your browser cannot play this song. It's unsupported.
+            </audio>
+        </div>
+-->
+        <div class="container">
+            <p>
+                <iframe style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=2990859094/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://iamhermusic.bandcamp.com/track/a-different-kind-of-christmas">A Different Kind of Christmas by Ash Blaize &amp; iaMHer</a></iframe>
+                <iframe style="border: 0; width: 350px; height: 442px; padding-left: 40px;" src="https://bandcamp.com/EmbeddedPlayer/track=2766047621/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://iamhermusic.bandcamp.com/track/lines-dont-matter">Lines Don&#39;t Matter by iaMHer</a></iframe>
+            </p>
+        </div>
+    </section>
+    <footer>
+        <!-- Add font awesome icons -->
+        <p align="center">
+            <a href="https://www.facebook.com/iamhermusic/"><span class="fab fa-facebook-f"></span></a>
+            <a href="https://iamhermusic.bandcamp.com/"><span class="fab fa-bandcamp"></span></a>
+            <a href="https://www.instagram.com/iamhermusic/"><span class="fab fa-instagram"></span></a>
+            <a href="https://soundcloud.com/iamher/"><span class="fab fa-soundcloud"></span></a>
+        </p>
+        <hr>
+        <!-- <p>Contact information: <a href="mailto:iamhermusic@gmail.com">iamhermusic@gmail.com</a>. -->
+        <p align="center">© iaMHer Music 2020</p>
+    </footer>
 </body>
 
-</html> 
+</html>
