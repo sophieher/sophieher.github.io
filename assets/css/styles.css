@@ -185,15 +185,15 @@ span.fab {
 }
 
 .spacer {
-  height: 20px;
+  height: 4px;
   width: 100%;
 }
 .release-cover {
   /*position: fixed;*/
   display: inline-block;
-  width: 370px;
+  width: 350px;
   /*margin-left: 10%;*/
-  border: 20px solid rgba(224, 199, 130, .7);
+  border: 14px solid rgba(224, 199, 130, .7);
   -webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
@@ -240,5 +240,5 @@ span.fa-sm:hover {
   color: #bbb;
 }
 .vr {
-  padding: 6px;
+  padding: 4px;
 }
